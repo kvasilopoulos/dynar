@@ -1,5 +1,5 @@
 Package: dynar
-Title: Dynare to R interface
+Title: Dynare to R
 Version: 0.0.0.9000
 Authors@R: person("Kostas", "Vasilopoulos", email = "k.vasilopoulo@gmail.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
