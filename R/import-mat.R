@@ -1,5 +1,4 @@
 
-#' @importFrom base sub
 strip_slashes <- function(x) {
   x <- sub("/*$", "", x)
   x
@@ -19,6 +18,7 @@ dynare_file <- function(..., path = ".") {
 
 
 #' @importFrom R.matlab readMat
+#' @export
 mat2r <- function(matfile = NULL, path = ".") {
 
   dyn_path <- dynare_file(matfile, path = path)
