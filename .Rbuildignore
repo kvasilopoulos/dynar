@@ -2,4 +2,9 @@
 ^\.Rproj\.user$
 ^data-raw$
 ^LICENSE\.md$
+^LICENSE$
 ^README\.Rmd$
+^cran-comments\.md$
+^\.github$
+^\.travis\.yml$
+^appveyor\.yml$

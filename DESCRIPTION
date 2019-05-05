@@ -1,18 +1,27 @@
 Package: dynar
 Title: Dynare to R
 Version: 0.0.0.9000
-Authors@R: person("Kostas", "Vasilopoulos", email = "k.vasilopoulo@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: Apache License (>= 2.0)
+Authors@R: 
+    person(given = "Kostas",
+           family = "Vasilopoulos",
+           role = c("aut", "cre"),
+           email = "k.vasilopoulo@gmail.com")
+Description: {dynar} takes the output of the dynare and
+    imports it into R. It provides helpful functions for plotting,
+    descriptive statistic and tables.
+License: GPL-3
+URL: https://github.com/kvasilopoulos/dynar
+BugReports: https://github.com/kvasilopoulos/dynar/issues
+Depends:
+    R (>= 3.1)
+Imports: 
+    magrittr (>= 1.5),
+    purrr (>= 0.3.2),
+    R.matlab (>= 3.6.2),
+    rlang,
+    stringi (>= 1.4.3),
+    stringr (>= 1.4.0)
 Encoding: UTF-8
 LazyData: true
-Depends:
-    R (>= 2.10)
-Imports: 
-    purrr (>= 0.3.2),
-    stringi (>= 1.4.3),
-    stringr (>= 1.4.0),
-    magrittr (>= 1.5),
-    R.matlab (>= 3.6.2)
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
