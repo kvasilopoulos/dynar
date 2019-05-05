@@ -16,7 +16,11 @@ dynare_file <- function(..., path = ".") {
   file.path(path, ...)
 }
 
-
+#' Imports from matlab to R
+#'
+#' @param matfile a .mat file.
+#' @param path the specified path to find the file.
+#'
 #' @importFrom R.matlab readMat
 #' @export
 mat2r <- function(matfile = NULL, path = ".") {

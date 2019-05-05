@@ -1,7 +1,7 @@
 #' @importFrom stringr str_remove word
 #' @importFrom stringi stri_remove_empty
 #' @importFrom rlang set_names
-#' @export
+#' @importFrom utils capture.output
 set_names_co <- function(x) {
 
   nm <- capture.output(x) %>%
@@ -48,6 +48,10 @@ clean_sublist <-
 
 # single function ---------------------------------------------------------
 
+#' Clean the imported matlab .mat matrix
+#'
+#' @param x an imported *_results.mat file
+#'
 #' @importFrom purrr map_if
 #'
 #' @export
