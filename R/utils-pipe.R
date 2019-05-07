@@ -11,4 +11,4 @@
 NULL
 
 
-globalVariables(".")
+globalVariables(c(".", "name", "shock", "var", "periods", "value"))

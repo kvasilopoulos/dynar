@@ -37,6 +37,14 @@ model <- mat2r("inst/main_basic_results.mat") %>%
 str(model, 1)
 ```
 
+## Impulse Response Function
+```{r}
+model %>% 
+  irf_long() %>% 
+  autoplot(filter_shock = "chi", 
+           filter_var = c("data_qhc", "data_qhd", "data_IHc", "data_IHd"))
+```
+
 ---
 Please note that the 'dynar' project is released with a
 [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md).

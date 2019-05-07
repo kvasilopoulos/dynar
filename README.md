@@ -42,6 +42,17 @@ str(model, 1)
 #>  $ oo.recursive   : NULL
 ```
 
+## Impulse Response Function
+
+``` r
+model %>% 
+  irf_long() %>% 
+  autoplot(filter_shock = "chi", 
+           filter_var = c("data_qhc", "data_qhd", "data_IHc", "data_IHd"))
+```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
 -----
 
 Please note that the ‘dynar’ project is released with a [Contributor
